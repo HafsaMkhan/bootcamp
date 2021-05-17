@@ -1,0 +1,21 @@
+{
+  "name": "bootcamp",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^4.0.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "dependencies": {
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "bootstrap": "lerna bootstrap --hoist",
+    "start": "lerna run start --stream",
+    "start:dev": "lerna run start:dev --stream",
+    "tsc": "lerna run tsc --stream",
+    "watch": "lerna run watch --stream",
+    "clean": "npx lerna clean -y"
+  }
+}
